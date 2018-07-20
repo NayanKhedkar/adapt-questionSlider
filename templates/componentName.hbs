@@ -22,8 +22,25 @@
 	        <div class="questionSlider" style="width:{{_totalWidth}}%">
 	          {{#each _items}}
 	          <div class="slide-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
-	             {{> slide this}}
-	            {{!-- <img src="{{src}}" alt="{{src}}"> --}}
+	          {{!--   {{> slide this}}
+	             <img src="{{src}}" alt="{{src}}"> --}}
+		     <div class="question-slide">
+    <table>
+		<tr>
+			{{#each headings}}
+	    	   <th>{{{this}}}</th>
+	    	{{/each}}
+		</tr>
+		{{#each _subItems}}
+			<tr class="sub-item-row" data-rbtnId="{{@index}}">
+				<td>{{{this.qText}}}</td>
+				{{#each this.options}}
+	                <td><input class="radio-btn" type="radio" name="btn-group-{{../gId}}" value="{{this}}" data-inputid="{{@index}}" {{#equals _selectedId (inc @index)}}checked="checked"{{/equals}}></td>{{_selectedId}}
+				{{/each}}
+			</tr>
+		{{/each}}
+    </table>
+</div>
 	          </div>
 	          {{/each}}
 	        </div>
