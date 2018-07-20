@@ -1,12 +1,12 @@
 define([
     'core/js/adapt',
-    './componentNameView',
-    './componentNameModel'
-], function(Adapt, ComponentNameView, ComponentNameModel) {
+    './questionSliderView',
+    './questionSliderModel'
+], function(Adapt, QuestionSliderView, QuestionSliderModel) {
 
-    return Adapt.register("componentName", {
-        view: ComponentNameView,
-        model: ComponentNameModel
+    return Adapt.register("questionSlider", {
+        view: QuestionSliderView,
+        model: QuestionSliderModel
     });
 
 });
