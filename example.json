@@ -1,0 +1,94 @@
+{
+		  "_id": "c-10",
+		  "_parentId": "b-05",
+		  "_type": "component",
+		  "_layout": "full",
+		  "_component": "questionSlider",
+		  "displayTitle": "Component title",
+		  "title": "",
+		  "body": "",
+		  "_classes": "",
+		  "_isLockedStep":true,
+		  "instruction": "Choose one or more options and select Submit.",
+		  "_attempts":1,
+		  "_canShowModelAnswer":false,
+		  "_canShowMarking":false,
+		  "_items": [
+		    {
+		      "title": "First Slide",
+		      "alt": "alt text",
+		      "src": "course/en/images/full_width.jpg",
+		      "headings":["Statement","True","False"],
+		      "_subItems":[
+                {
+                  "gId":"1",
+                  "qText":"I prefer one-to-one conversations to group activities.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"2",
+                  "qText":"I often prefer to express myself in writing.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"3",
+                  "qText":"I enjoy solitude.",
+                  "options":[true,false]
+                }
+		      ]
+		    },
+		    {
+		      "title": "Second Slide",
+		      "alt": "alt text",
+		      "src": "course/en/images/full_width.jpg",
+		      "headings":["Statement","True","False"],
+		      "_subItems":[
+                {
+                  "gId":"4",
+                  "qText":"I prefer one-to-one conversations to group activities.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"5",
+                  "qText":"I often prefer to express myself in writing.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"6",
+                  "qText":"I enjoy solitude.",
+                  "options":[true,false]
+                }
+		      ]
+		    },
+		    {
+		      "title": "Third Slide",
+		      "alt": "alt text",
+		      "src": "course/en/images/full_width.jpg",
+		      "headings":["Statement","True","False"],
+		      "_subItems":[
+                {
+                  "gId":"7",
+                  "qText":"I prefer one-to-one conversations to group activities.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"8",
+                  "qText":"I often prefer to express myself in writing.",
+                  "options":[true,false]
+                },
+                {
+                  "gId":"9",
+                  "qText":"I enjoy solitude.",
+                  "options":[true,false]
+                }
+		      ]
+		    }
+		  ],
+		  "_feedback": {
+			"title": "Feedback",
+			"correct": "Correct feedback text.<br><br>That’s correct. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href='http://en.wikipedia.org/wiki/Multiple_choice' target='_blank'>Wikipedia</a><br><br><em>Component facts: <strong>Multiple Choice Questions (or MCQs)</strong> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</em>",
+			"_incorrect": {
+				"final": "Incorrect feedback text.<br><br>That’s not right. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href='http://en.wikipedia.org/wiki/Multiple_choice' target='_blank'>Wikipedia</a><br><br><em>Component facts: <strong>Multiple Choice Questions (or MCQs)</strong> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</em>"
+			}
+		}
+	}
