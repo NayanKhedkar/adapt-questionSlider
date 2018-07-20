@@ -1,10 +1,45 @@
-<div class="componentName-inner component-inner" role="region" aria-label="{{_globals._components._componentName.ariaRegion}}">
+<div class="questionSlider-inner component-inner" role="region" aria-label="{{_globals._components._questionSlider.ariaRegion}}">
     {{> component this}}
-
-    <div class="componentName-widget component-widget">
-        {{!-- Do your stuff here --}}
+    {{log "againRendered"}}
+    <div class="questionSlider-widget component-widget">
+        <div class="title-frame clearfix">
+	        <div class="title-slider" style="width:{{_totalWidth}}%">
+	          {{#each _items }}
+	            <div class="title-item" style="width:{{../_itemWidth}}%" data-slidetitleindex="{{@index}}">
+	              <div class="title-item-inner">
+	                {{{title}}}
+	              </div>
+	            </div>
+	          {{/each}}
+	        </div>
+	    </div>
+	    <div class="numeric-progress">
+	    	<span class="current-slide">0</span>
+	    	<span class="seprator">/</span>
+	    	<span class="total-slide">3</span>
+	    </div>
+	    <div class="slider-frame clearfix">
+	        <div class="questionSlider" style="width:{{_totalWidth}}%">
+	          {{#each _items}}
+	          <div class="slide-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
+	             {{> slide this}}
+	            {{!-- <img src="{{src}}" alt="{{src}}"> --}}
+	          </div>
+	          {{/each}}
+	        </div>
+	        <button class="slider-button previous base">
+	          <div class="icon icon-controls-left"></div>
+	        </button>
+	        <button class="slider-button next base">
+	          <div class="icon icon-controls-right"></div>
+	        </button>
+	    </div>
+	    <div class="indicator">
+	        {{#each _items }}
+	            <span class="progress" data-index="{{@index}}"></span>
+	        {{/each}}
+	    </div>
     </div>
-
     {{!-- This ensures that the standard question component buttons are automatically rendered into your view --}}
     <div class="buttons"></div>
 </div>
